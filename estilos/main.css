@@ -5,6 +5,7 @@
     --cor-fundo-principal: #F2E9D8;
     --cor-texto: #0D0D0D;
     --fonte-principal: 'Yeseva One', cursive;
+    --borda: 1px solid #594442
 }
 
 body {
@@ -27,17 +28,29 @@ body {
 }
 
 /* Menu*/
-img {
+
+
+header h1 {
+    text-decoration: underline;
+}
+
+a {
+    color: #0D0D0D;
+}
+
+header img {
     width: 100px;
     float: left;
+    position: static;
     padding-right: 15px;
 }
 
 .menu {
     list-style: none;
-    border: 1px solid #594442;
+    border: var(--borda);
     float: left;
     display: flex;
+    width: 29%;
     padding: 0px;
     ;
 }
@@ -45,7 +58,7 @@ img {
 .menu li {
     position: relative;
     float: left;
-    border: 1px solid #594442;
+    border: var(--borda);
 }
 
 .menu li a {
@@ -59,7 +72,6 @@ img {
 .menu li a:hover {
     background: #F2AD85;
     color: var(--cor-texto);
-    border: 1px solid #594442;
 }
 
 .menu li ul {
@@ -73,11 +85,12 @@ img {
 .menu li:hover ul {
     display: block;
     padding: 0px;
-
+    z-index: 1;
+    border: var(--borda);
 }
 
 .menu li ul li {
-    border: 1px solid #594442;
+    border: var(--borda);
     margin: none;
     width: 100px;
     list-style: none;
@@ -85,17 +98,18 @@ img {
 
 .menu li ul li:hover {
     background: #F2AD85;
-    border: 1px solid #594442;
+    border: var(--borda);
     margin: none;
+    padding: 0px;
     width: 100px;
 
 }
 
 /*body*/
 .main {
-    background-color: #F2AD85;
-    border-radius: 20px;
-    border: thin black;
+    background-color: white;
+    border: var(--borda);
     text-align: justify;
     padding: 1px 15px;
+    margin: 20px 100px;
 }
