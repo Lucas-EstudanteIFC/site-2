@@ -19,7 +19,7 @@ body {
 .grid-container {
     display: grid;
     margin: 20px 15px 20px;
-
+        
 }
 
 #item1 {
@@ -50,7 +50,7 @@ header img {
     border: var(--borda);
     float: left;
     display: flex;
-    width: 29%;
+    width: 392px;
     padding: 0px;
     ;
 }
@@ -106,10 +106,30 @@ header img {
 }
 
 /*body*/
-.main {
+main {
     background-color: white;
     border: var(--borda);
     text-align: justify;
-    padding: 1px 15px;
-    margin: 20px 100px;
+    padding: 1px 10px;
+    font-size: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#img1 {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+}
+
+main > a {
+    margin: auto;
+    padding: 5px;
+}
+
+.noticia {
+    width: 30%;
+    height: 100%;
+    display: inline;
 }
