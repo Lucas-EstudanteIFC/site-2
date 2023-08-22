@@ -24,6 +24,7 @@ header {
 
 .logo img {
     width: 120px;
+    padding: 5px;
 }
 
 a {
@@ -50,6 +51,8 @@ nav a:hover {
     color: var(--cor-text-N-nav-hover);
     background-color: var(--cor-header-principal);
     font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 3px 2px #0D0D0D;
 }
 
 /*Corpo do Jornal*/
@@ -59,7 +62,7 @@ nav a:hover {
 
 .noticia {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     border: 1px solid black;
 }
 
@@ -74,7 +77,7 @@ nav a:hover {
 
 #img-destaque {
     padding: 15px;
-    width: 100%;
+    width: 50%;
     margin-left: 20px;
     display: inline;
 }
@@ -85,28 +88,46 @@ nav a:hover {
 
 .sessao-principal {
     display: grid;
-    grid-template-columns: 1fr 150px;
-    padding: 20px;
+    grid-template-rows: 100px 1fr;
+    padding: 10px;
+    gap: 10px;
 }
 
-main {
+section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px
+    gap: 5px;
 }
 
-main img {
+section img {
     width: 90%;
     align-items: center;
     display: block;
 }
 
-main p {
+section p {
     font-family: var(--fonte-principal);
     top: -50px;
     font-size: 20px;
     position: relative;
     background-color: var(--cor-fundo-principal);
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+aside img {
+    width: 200px;
+    margin: auto;
+    display:block;
+}
+
+
+aside img:hover {
+    border: 1px double rgba(0, 0, 0, 0.507);
 }
 
 /*Media Screen: 800px*/
@@ -132,8 +153,6 @@ main p {
     nav a:hover {
         font-size: 20px
     }
-
-
 }
 
 /*Media Screen 500px*/
@@ -162,6 +181,7 @@ main p {
     .noticia {
         grid-template-columns: 1fr;
     }
+
     .noticia img {
         width: 50%;
     }
