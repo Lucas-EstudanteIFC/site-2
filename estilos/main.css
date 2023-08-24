@@ -141,6 +141,10 @@ aside img:hover {
         font-size: 30px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     .logo img {
         width: 90px;
     }
@@ -172,6 +176,10 @@ aside img:hover {
     }
 
     header h1 {
+        font-size: 25px;
+    }
+
+    h2{
         font-size: 25px;
     }
 
