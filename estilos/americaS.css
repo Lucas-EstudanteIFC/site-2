@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 :root {
-    --cor-fundo-principal: #F2EBDC;
-    --cor-header-principal: #594442;
+    --cor-fundo-principal: #D9BCA3;
+    --cor-header-principal: #038C8C;
 
-    --cor-nav: #D98162;
-    --cor-text-N-nav-hover: #F2AD85;
+    --cor-nav: #63BFAE;
+    --cor-text-N-nav-hover: #D9BF3D;
 
     --cor-texto: #0D0D0D;
     --fonte-principal: 'Yeseva One', cursive;
 }
-
-/* Cabeçalho */
 
 header {
     background-color: var(--cor-header-principal);
@@ -21,6 +19,7 @@ header {
     align-items: center;
     justify-items: center;
 }
+
 
 .logo img {
     width: 120px;
@@ -113,6 +112,7 @@ section p {
     align-items: center;
 }
 
+
 aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,11 +134,11 @@ aside img:hover {
 
     /*Cabeçalho*/
     header {
-        grid-template-columns: 120px 1fr 120px;
+        grid-template-columns: 120px 1fr 120px; 
     }
 
     header h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .logo img {
@@ -168,18 +168,17 @@ aside img:hover {
     header {
         grid-template-columns: 1fr;
         align-items: center;
-
     }
 
     header h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .logo img {
         display: none;
     }
 
-    nav a {
+     nav a {
         font-size: 15px;
         display: block;
     }
